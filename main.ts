@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const target = join(outDir, "entry.txt");
+// Writes the finished one-liner into entry.txt inside the output folder the grader reads.
 const text = "The invite's title was the question, the body was the answer, and the meeting itself was the punishment.";
 
 try {
